@@ -1,0 +1,30 @@
+<div class="col-md-6 offset-md-3">
+    <p></p>
+    <p></p>
+    
+    <h5 style="color :black" >Add New Book to Library</h5>
+    
+    <form (ngSubmit)="onSubmit()">
+    
+        <div class="form-group">
+            <label>Book Name</label>
+            <input type="text" class ="form-control" id="bookName"
+            [(ngModel)]="book.bookName" name="bookName">
+        </div>
+    
+        <div class="form-group">
+            <label>Author</label>
+            <input type="text" class ="form-control" id="author"
+            [(ngModel)]="book.author" name="author">
+        </div>
+    
+        <div class="form-group">
+            <label>Genre</label>
+            <input type="text" class ="form-control" id="genre"
+            [(ngModel)]="book.genre" name="genre">
+        </div>
+    
+        <p></p>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>
